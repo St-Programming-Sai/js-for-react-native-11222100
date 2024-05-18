@@ -6,4 +6,14 @@ function processArray(arr){
     });
 }
 
-console.log(processArray([1, 2, 3, 4]))
+
+// Task Two
+function formatArrayStrings(stringArr, numberArr) {
+    return stringArr.map((stringItem, i) => {
+        return (numberArr[i] % 2 === 0) ? stringItem.toUpperCase() : stringItem.toLowerCase();
+    });
+}
+
+
+
+console.log(formatArrayStrings(["boy", 'girl', "house", 'chair'], processArray([1, 2, 3, 4])))
