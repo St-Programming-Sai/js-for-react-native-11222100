@@ -8,6 +8,7 @@ function processArray(arr){
 
 
 // Task Two
+// Function that capitalises the entire string if the proccessed array's item is an even number and turns it to lower canse if the proccessed array's item is not.
 function formatArrayStrings(stringArr, numberArr) {
     return stringArr.map((stringItem, i) => {
         return (numberArr[i] % 2 === 0) ? stringItem.toUpperCase() : stringItem.toLowerCase();
@@ -15,5 +16,5 @@ function formatArrayStrings(stringArr, numberArr) {
 }
 
 
+export { processArray, formatArrayStrings };
 
-console.log(formatArrayStrings(["boy", 'girl', "house", 'chair'], processArray([1, 2, 3, 4])))
